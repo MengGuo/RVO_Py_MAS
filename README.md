@@ -17,9 +17,6 @@ Features
 * Scalable and fast.
 * Use Pygame for easy visualization.
 
-<p align="center">  
-  <img src="https://github.com/MengGuo/Roadmap_Poly2tri/blob/master/data/example.png" width="800"/>
-</p>
 
 ----
 References 

@@ -13,7 +13,7 @@ Features
 -----
 * Takes a 2D workspace with any number of non-overlaping circular or square obstacles
 * Any number of dynamic agents with non-zero volume.  
-* `Direct plug-and-play and fully integrate-able  with your **actual** control objective`, i.e., the output velocity is a minimal modification of the decried velocity.  
+* **Direct plug-and-play and fully integrate-able  with your _actual_ control objective**, i.e., the output velocity is a minimal modification of the decried velocity.  
 * Scalable and fast.
 * Use Pygame for easy visualization.
 

@@ -1,12 +1,12 @@
 RVO_Py_MAS
 ========
 
-Python Implementation of Reciprocal Velocity Obstacle for Multi-agent Systems
+Python Implementation of Reciprocal Velocity Obstacle (RVO) for Multi-agent Systems
 
 -----
 Description
 -----
-this package contains a _plug-and-play_ Python package for collision-avoidance in multi-agent system, based on reciprocal velocity obstacles. 
+this package contains a _plug-and-play_ Python package for collision-avoidance in multi-agent system, based on reciprocal velocity obstacles ([RVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf)) and hybrid reciprocal velocity obstacles ([HRVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf)).
 
 -----
 Features
@@ -21,6 +21,6 @@ Features
 ----
 References 
 ----
-* Paper on [RVO](http://gamma.cs.unc.edu/HRVO/HRVO-T-RO.pdf)
+* Papers on [RVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf), [HRVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf)
 * There are [Python bindings](https://github.com/sybrenstuvel/Python-RVO2) of the C++ implementation from the algorithm developers. For my purposes, the formality is too _heavy_ to be integrated into my own project, so I have my own try.
-* This package does not depend on the [Clearpath geometric package](http://pcl.intel-research.net/publications/clearpath_sca2009.pdf) to compute velocity obstacles.
+* This package does _not_ depend on the [Clearpath geometric package](http://pcl.intel-research.net/publications/clearpath_sca2009.pdf) to compute velocity obstacles.

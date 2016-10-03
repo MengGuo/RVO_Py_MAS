@@ -11,8 +11,7 @@ ws_model = dict()
 #robot radius
 ws_model['robot_radius'] = 0.2
 #circular obstacles, format [x,y,rad]
-#ws_model['circular_obstacles'] = [[0.5,1.5,0.5], [4.5,1.5,0.5], [2.5,3.2,0.8]]
-ws_model['circular_obstacles'] = []
+ws_model['circular_obstacles'] = [[0.0+i*1.3, 2.5, 0.3] for i in range(4)]
 #rectangular boundary, format [x,y,width/2,heigth/2]
 ws_model['boundary'] = [] 
 
@@ -30,9 +29,9 @@ goal = [[5.5-1.0*i, 5.0] for i in range(7)] + [[5.5-1.0*i, 0.0] for i in range(7
 #------------------------------
 #simulation setup
 # total simulation time (s)
-total_time = 15
+total_time = 20
 # simulation step
-step = 0.01
+step = 0.05
 
 #------------------------------
 #simulation starts
@@ -48,8 +47,6 @@ while t*step < total_time:
         X[i][1] += V[i][1]*step
     #----------------------------------------
     # visualization
-    if t%10 == 0:
-        #visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.pdf'%str(t/10))
-        visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.png'%str(t/10))
+    visualize_traj_dynamic(ws_model, X, V, goal, time=t, name='data/snap%s.png'%str(t))
     t += 1
     

@@ -40,10 +40,10 @@ def visualize_traj_dynamic(ws_model, X, U, goal, time = None, name=None):
         ax.add_patch(robot)
         #----------plot velocity
         ax.arrow(X[i][0], X[i][1], U[i][0], U[i][1], head_width=0.05, head_length=0.1, fc=cmap(i), ec=cmap(i))
-        ax.text(X[i][0]-0.1, X[i][1]-0.1, r'$a_{%s}$' %i, fontsize=20, fontweight = 'bold',zorder=2)
-        ax.plot([goal[i][0]], [goal[i][1]], 'x', color=cmap(i), markersize =20)
+        ax.text(X[i][0]-0.1, X[i][1]-0.1, r'$%s$' %i, fontsize=15, fontweight = 'bold',zorder=3)
+        ax.plot([goal[i][0]], [goal[i][1]], '*', color=cmap(i), markersize =15,linewidth=3.0)
     if time:
-        ax.text(2,5.5,'$t=%.2f s$' %time,
+        ax.text(2,5.5,'$t=%.1f s$' %time,
                 fontsize=20, fontweight ='bold')                
     # ---set axes ---
     ax.set_aspect('equal')
@@ -53,7 +53,8 @@ def visualize_traj_dynamic(ws_model, X, U, goal, time = None, name=None):
     ax.set_ylabel(r'$y (m)$')
     ax.grid('on')
     if name:
-        pyplot.savefig(name, dpi = 100)
+        pyplot.savefig(name, dpi = 200)
+        #pyplot.savefig(name,bbox_inches='tight')
     return figure
 
 def get_cmap(N):

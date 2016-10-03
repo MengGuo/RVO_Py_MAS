@@ -12,6 +12,7 @@ ws_model = dict()
 ws_model['robot_radius'] = 0.2
 #circular obstacles, format [x,y,rad]
 #ws_model['circular_obstacles'] = [[0.5,1.5,0.5], [4.5,1.5,0.5], [2.5,3.2,0.8]]
+# no obstacles
 ws_model['circular_obstacles'] = []
 #rectangular boundary, format [x,y,width/2,heigth/2]
 ws_model['boundary'] = [] 

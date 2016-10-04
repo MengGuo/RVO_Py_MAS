@@ -50,7 +50,7 @@ References
 ----
 Discussion
 ----
-* For very clustered workspace with a large number of robots, you may need to limit the maximal velocity and use very small step size.
+* For **very** clustered workspace with a large number of robots, you may need to limit the `maximal velocity` and use very `small step size`.
 * You may add additional constraints in `RVO_update` such as the change rate of `V`, the lower bound of `V`.
 * When applying this module to experimental robot control, you may need to set the **step size** higher due to hardware constraints.
 * In most practical experiments, this scheme should still work by limiting the _maximal velocity_.  

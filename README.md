@@ -32,7 +32,7 @@ X = Update_X(X, V, step)
 
 
 <p align="center">  
-  <img src="https://github.com/MengGuo/P_MDP_TG/blob/master/MDP_TG/figures/risk.png" width="800"/>
+  <img src="https://github.com/MengGuo/RVO_Py_MAS/blob/master/data/snapshots.png" width="800"/>
 </p>
 
 
@@ -49,6 +49,6 @@ Discussion
 ----
 * For very clustered workspace with a large number of robots, you may need to limit the maximal velocity and use very small step size.
 * You may add additional constraints in `RVO_update` such as the change rate of `V`, the lower bound of `V`.
-* When applying this module to experimental robot control, you may need to set the step size higher due to hardware constraints.
-* In most practical experiments, this scheme should still work by limiting the maximal velocity.  
+* When applying this module to experimental robot control, you may need to set the **step size** higher due to hardware constraints.
+* In most practical experiments, this scheme should still work by limiting the _maximal velocity_.  
 

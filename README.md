@@ -28,7 +28,7 @@ X = Update_X(X, V, step)
 ```
 
 * Scalable and fast, see examples. 
-* See [example.py](https://github.com/MengGuo/RVO_Py_MAS/blob/master/example.py) for test run. [[video1]](https://vimeo.com/185405407) [[video2]](https://github.com/MengGuo/RVO_Py_MAS/blob/master/example.py)
+* See [example.py](https://github.com/MengGuo/RVO_Py_MAS/blob/master/example.py) for test run. [[video1]](https://vimeo.com/185405407) [[video2]](https://vimeo.com/185408368)
 
 
 <p align="center">  

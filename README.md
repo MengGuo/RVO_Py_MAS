@@ -11,24 +11,27 @@ this package contains a _plug-and-play_ Python package for collision-avoidance i
 -----
 Features
 -----
-* Takes a 2D workspace with any number of non-overlaping circular or square obstacles
-* Any number of dynamic agents with non-zero volume.  
-* **Direct plug-and-play and fully integrate-able  with your _actual_ control objective**, i.e., the output velocity is a minimal modification of the decried velocity.
+* Takes a 2D workspace with _any number_ of non-overlaping circular or square obstacles
+* _Any number_ of dynamic agents with non-zero volume.
+* Allow the choice of VO, RVO, HRVO.
+* **Direct plug-and-play** and **fully integrate-able  with your control objective**, i.e., the output velocity is a minimal modification of the desired velocity.
 
 ```python
 from your_module import compute_desired_V, Update_V
 from RVO import RVO_update
 
+# your control objective here 
 desired_V = compute_desired_V(X, control_objective, V_max)
-#----------------------------------------
-# plug in the RVO controller here
+
+# plug in the RVO controller from this package
 V = RVO_update(X, V_des, workspace_model)
-#----------------------------------------
+
+# let the robot move
 X = Update_X(X, V, step)
 ```
 
-* Scalable and fast, see examples. 
-* See [example.py](https://github.com/MengGuo/RVO_Py_MAS/blob/master/example.py) for test run. [[video1]](https://vimeo.com/185405407) [[video2]](https://vimeo.com/185408368)
+* Scalable and fast, see examples below. 
+* See [example.py](https://github.com/MengGuo/RVO_Py_MAS/blob/master/example.py) for test run. [[Video1]](https://vimeo.com/185405407), [[Video2]](https://vimeo.com/185408368)
 
 
 <p align="center">  

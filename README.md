@@ -6,7 +6,7 @@ Python Implementation of Reciprocal Velocity Obstacle (RVO) for Multi-agent Syst
 -----
 Description
 -----
-this package contains a **_plug-and-play_** Python package for collision-avoidance in multi-agent system, based on reciprocal velocity obstacles ([RVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf)) and hybrid reciprocal velocity obstacles ([HRVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf)).
+This package contains a **_plug-and-play_** Python package for collision-avoidance in multi-agent system, based on reciprocal velocity obstacles ([RVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf)) and hybrid reciprocal velocity obstacles ([HRVO](https://www.cs.unc.edu/~geom/RVO/icra2008.pdf)).
 
 It has _minimal impact_ on your control objective and requires _minimal integration_. 
 

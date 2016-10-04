@@ -10,6 +10,12 @@ This package contains a **_plug-and-play_** Python package for collision-avoidan
 
 It has _minimal impact_ on your control objective and requires _minimal integration_. 
 
+
+
+<p align="center">  
+  <img src="https://github.com/MengGuo/RVO_Py_MAS/blob/master/data/snapshots.png" width="800"/>
+</p>
+
 -----
 Features
 -----
@@ -34,11 +40,6 @@ X = Update_X(X, V, step)
 
 * Scalable and fast, see examples below. 
 * See [example.py](https://github.com/MengGuo/RVO_Py_MAS/blob/master/example.py) for test run. [[Video1]](https://vimeo.com/185405407), [[Video2]](https://vimeo.com/185408368)
-
-
-<p align="center">  
-  <img src="https://github.com/MengGuo/RVO_Py_MAS/blob/master/data/snapshots.png" width="800"/>
-</p>
 
 
 ----

@@ -29,10 +29,10 @@ from your_module import compute_desired_V, Update_V
 from RVO import RVO_update
 
 # your control objective here 
-desired_V = compute_desired_V(X, control_objective, V_max)
+V_desired = compute_desired_V(X, control_objective, V_max)
 
 # plug in the RVO controller from this package
-V = RVO_update(X, V_des, workspace_model)
+V = RVO_update(X, V_desired, workspace_model)
 
 # let the robot move
 X = Update_X(X, V, step)

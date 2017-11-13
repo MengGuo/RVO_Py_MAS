@@ -55,6 +55,8 @@ def visualize_traj_dynamic(ws_model, X, U, goal, time = None, name=None):
     if name:
         pyplot.savefig(name, dpi = 200)
         #pyplot.savefig(name,bbox_inches='tight')
+    pyplot.cla()
+    pyplot.close(figure)
     return figure
 
 def get_cmap(N):

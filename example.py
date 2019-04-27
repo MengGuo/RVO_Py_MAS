@@ -51,7 +51,7 @@ while t*step < total_time:
     #----------------------------------------
     # visualization
     if t%10 == 0:
-        visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.jpg'%str(t/10))
+        visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.png'%str(t/10))
         #visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.png'%str(t/10))
     t += 1
     
